@@ -7,6 +7,7 @@ This Program is controls DNS spoofing if program understands dns spoofing tell i
 This Program is controls MITM attacks if any mac address is more then one program tell it you with notification
 
 ## How To Use
+(Install python if not installed)
 - Run this commands on cmd :
    * pip install plyer pyinstaller
    * pyinstaller --onefile --noconsole --hidden-import=plyer.platforms.win.notification antispoofing.py
