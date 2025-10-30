@@ -14,4 +14,4 @@ This Program is controls MITM attacks if any mac address is more then one progra
 - Place the exe file from the dist folder into
   * C:\Users\YOUR_USER_NAME_HERE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 ## Last
-Now You are ready program will work on background for you
+Now You are ready, Program will work on background for you
