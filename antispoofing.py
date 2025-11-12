@@ -1,12 +1,13 @@
 import socket, time, os, re
 from plyer import notification
 from collections import Counter
+from typing import Final
 
 mac_re = re.compile(r"([0-9a-fA-F]{2}[-:][0-9a-fA-F]{2}[-:][0-9a-fA-F]{2}[-:][0-9a-fA-F]{2}[-:][0-9a-fA-F]{2}[-:][0-9a-fA-F]{2})")
 
-facebook = socket.gethostbyname("facebook.com")
-instagram = socket.gethostbyname("instagram.com")
-linkedin = socket.gethostbyname("linkedin.com")
+facebook: Final = socket.gethostbyname("facebook.com")
+instagram: Final = socket.gethostbyname("instagram.com")
+linkedin: Final = socket.gethostbyname("linkedin.com")
 while True:
     try:
         if socket.gethostbyname("facebook.com") == facebook and socket.gethostbyname("instagram.com") == instagram and socket.gethostbyname("linkedin.com") == linkedin:
@@ -30,4 +31,5 @@ while True:
         break
     except Exception:
         continue
+
     time.sleep(10)
